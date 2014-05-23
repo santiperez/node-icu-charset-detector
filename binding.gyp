@@ -15,7 +15,11 @@
           },
 		  'libraries': ['`icu-config --ldflags`' ],
         }],
-		['OS=="win"', {
+         ['OS=="linux"', {
+
+		'libraries': ['`icu-config --ldflags`' ],
+        }],
+	['OS=="win"', {
           'include_dirs': [
               'C:\Program Files (x86)\icu\include'
           ],
